@@ -59,6 +59,7 @@ router.put('/:id',auth,async (req,res)=>{
         if(!check) return res.status(404).send('Check with the given Id not Found')
         const duplicated = await Check.find({name:req.body.name})
         if(typeof(duplicated) == Check) return res.status(404).send('Name already Exists')
+        if(check.userId != req.user._Id) return res.status(403).send('Forbidden')
         updates.forEach((u)=>{
             if(u != "userId")
             check[u] = req.body[u]
