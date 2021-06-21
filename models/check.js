@@ -31,8 +31,15 @@ const userSchema = new mongoose.Schema({
     },
     config:{
         intervalUnits:{
-            type:String,
+            type:String
         }
+    },
+    checkStatus:{
+        type:String
+    },
+    firstCheck:{
+        type:Boolean,
+        default: false
     },
     userId:{
         type:mongoose.Schema.Types.ObjectId,
@@ -55,7 +62,10 @@ const userSchema = new mongoose.Schema({
         ignoreSSL:Joi.bool().optional(),
         config:Joi.object().optional(),
         webhook:Joi.string().optional(),
-        protocol:Joi.string().optional()
+        protocol:Joi.string().optional(),
+        checkStatus:Joi.string().optional(),
+        tag:Joi.string().optional(),
+        firstCheck:Joi.string().optional()
     });
     return schema.validate(check);
   }
