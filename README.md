@@ -15,11 +15,11 @@ Node App to check if the website is up or down
 - **email** : Email of the User.
 - **password** : Password for the User.
 ### 2. Check
-    - **name** : the Name of The Check.
-    - **url** : The URL to be monitored.
-    - **tag** : A list of the check tags (optional).
-    - **ignoreSSL** : A flag to ignore broken/expired SSL certificates in case of using the HTTPS protocol (optional).
-    - **port** : The server port number (optional).
-    - **webhook** :  (defaults to https://webhook.site/e8224a85-21d6-4aff-889c-21dae8a6d548) A webhook URL to receive a notification on (optional).
-    - **interval** : (defaults to 15 mins) The time interval for polling requests (optional).
-    - **config.intervalUnits** : time unit you want your Monitor to use. milliseconds, seconds, minutes (default), and hours.
+- **name** : the Name of The Check.
+- **url** : The URL to be monitored.
+- **tag** : A list of the check tags (optional).
+- **ignoreSSL** : A flag to ignore broken/expired SSL certificates in case of using the HTTPS protocol (optional).
+- **port** : The server port number (optional).
+- **webhook** :  (defaults to https://webhook.site/e8224a85-21d6-4aff-889c-21dae8a6d548) A webhook URL to receive a notification on (optional).
+- **interval** : (defaults to 15 mins) The time interval for polling requests (optional).
+- **config.intervalUnits** : time unit you want your Monitor to use. milliseconds, seconds, minutes (default), and hours.
