@@ -5,8 +5,8 @@ Node App to check if the website is up or down
 2. Open Email and click link sent to You to Verify the Account.
 3. Login through http://localhost:3000/login Endpoint and Get the bearer Token.
 4. Create new Check through Post request to localhost:3000/check Endpoint (Use Auth Token from Login).
-  - Edit Check throuh Put request to localhost:3000/check (Use Auth Token from Login).
-  - Delete Check through Delete request to localhost:3000/check (Use Auth Token from Login).
+        - Edit Check throuh Put request to localhost:3000/check (Use Auth Token from Login).
+        - Delete Check through Delete request to localhost:3000/check (Use Auth Token from Login).
 5. Run Check through localhost:3000/check/(checkName) (Use Auth Token from Login).
 6. Run Group of Check with the same Tag through localhost:3000/check/bulk/(TagName) (Use Auth Token from Login).
 ## Models
