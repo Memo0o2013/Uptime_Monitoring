@@ -11,9 +11,9 @@ Node App to check if the website is up or down
 6. Run Group of Check with the same Tag through localhost:3000/check/bulk/(TagName) (Use Auth Token from Login).
 ## Models
 ### 1. Users
-    - **name** : The name of the User (Optional).
-    - **email** : Email of the User.
-    - **password** : Password for the User.
+- **name** : The name of the User (Optional).
+- **email** : Email of the User.
+- **password** : Password for the User.
 ### 2. Check
     - **name** : the Name of The Check.
     - **url** : The URL to be monitored.
